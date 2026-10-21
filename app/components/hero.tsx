@@ -19,10 +19,9 @@ export default function Hero() {
       />
 
       <div className="relative mx-auto w-full max-w-6xl px-6 py-28">
-        <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-xs font-medium tracking-wide text-amber-300 uppercase">
-          <span className="size-1.5 rounded-full bg-amber-400" />
+        <p className="mb-6 text-xs font-semibold tracking-widest text-amber-400 uppercase">
           Global Headquarters · Lagos, Nigeria
-        </span>
+        </p>
 
         <h1 className="max-w-3xl font-display text-5xl leading-tight font-bold tracking-tight text-balance sm:text-6xl lg:text-7xl">
           A City of Refuge for{" "}

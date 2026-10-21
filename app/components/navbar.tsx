@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const links = [
-  { label: "About", href: "#about" },
-  { label: "Pillars", href: "#pillars" },
-  { label: "Facilities", href: "#facilities" },
-  { label: "Projects", href: "#projects" },
-  { label: "Visit", href: "#visit" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Pillars", href: "/#pillars" },
+  { label: "Facilities", href: "/#facilities" },
+  { label: "Volunteer", href: "/volunteer" },
+  { label: "Contact", href: "/contact" },
 ];
-
-const donateUrl = "https://gospelpillars.org/give/";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-200/60 bg-white/80 backdrop-blur dark:border-zinc-800/60 dark:bg-zinc-950/80">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src="/ark-logo.png"
             alt="Ark of Light for All Nations — home"
@@ -28,27 +28,28 @@ export default function Navbar() {
             className="h-9 w-auto"
             priority
           />
-        </a>
+        </Link>
 
         <ul className="hidden items-center gap-7 text-sm font-medium text-zinc-600 md:flex dark:text-zinc-400">
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="transition-colors hover:text-zinc-950 dark:hover:text-zinc-50">
+              <Link
+                href={link.href}
+                className="transition-colors hover:text-zinc-950 dark:hover:text-zinc-50"
+              >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
 
         <div className="hidden md:block">
-          <a
-            href={donateUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/give"
             className="rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-amber-500/25 transition-opacity hover:opacity-90"
           >
             Donate Today
-          </a>
+          </Link>
         </div>
 
         <button
@@ -68,20 +69,19 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 text-sm font-medium text-zinc-600 dark:text-zinc-400">
             {links.map((link) => (
               <li key={link.href}>
-                <a href={link.href} onClick={() => setOpen(false)}>
+                <Link href={link.href} onClick={() => setOpen(false)}>
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
-              <a
-                href={donateUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/give"
+                onClick={() => setOpen(false)}
                 className="block rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-4 py-2 text-center font-semibold text-white"
               >
                 Donate Today
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
