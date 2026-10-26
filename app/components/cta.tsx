@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Cta() {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-24">
@@ -8,27 +10,25 @@ export default function Cta() {
         />
         <div className="relative">
           <h2 className="mx-auto max-w-2xl font-display text-4xl font-bold tracking-tight text-balance text-white sm:text-5xl">
-            Join us in touching lives across the nations
+            Join Us in Touching Lives Across the Nations
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-pretty text-zinc-400">
             Partner with the Ark — give towards the food bank, or volunteer
             with the 1,500+ team serving 20,000 families every year.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href="https://gospelpillars.org/give/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/give"
               className="rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-amber-500/25 transition-opacity hover:opacity-90"
             >
               Donate Today
-            </a>
-            <a
-              href="mailto:info@arkoflightforallnations.com?subject=Volunteering%20at%20the%20Ark"
+            </Link>
+            <Link
+              href="/volunteer"
               className="rounded-full border border-white/25 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
               Become a Volunteer
-            </a>
+            </Link>
           </div>
         </div>
       </div>

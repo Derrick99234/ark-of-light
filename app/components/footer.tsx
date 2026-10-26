@@ -1,17 +1,20 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const siteLinks = [
-  { label: "About", href: "#about" },
-  { label: "Our Pillars", href: "#pillars" },
-  { label: "Facilities", href: "#facilities" },
-  { label: "Projects", href: "#projects" },
-  { label: "Visit", href: "#visit" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about" },
+  { label: "Our Pillars", href: "/#pillars" },
+  { label: "Facilities", href: "/#facilities" },
+  { label: "Volunteer", href: "/volunteer" },
+  { label: "Giving & Partnership", href: "/give" },
+  { label: "Contact & Visit", href: "/contact" },
 ];
 
-const services = [
-  "Sanctuary of Refuge",
-  "Ark Food Bank",
-  "Emergency Response Centre",
+const pillarServices = [
+  { label: "Sanctuary of Refuge", href: "/pillars/sanctuary-of-refuge" },
+  { label: "Ark Food Bank", href: "/pillars/food-bank" },
+  { label: "Emergency Response Centre", href: "/pillars/emergency-response" },
 ];
 
 const socials = [
@@ -66,7 +69,7 @@ export default function Footer() {
     <footer className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
-          <a href="#">
+          <Link href="/">
             <Image
               src="/ark-logo.png"
               alt="Ark of Light for All Nations — home"
@@ -74,7 +77,7 @@ export default function Footer() {
               height={35}
               className="h-9 w-auto"
             />
-          </a>
+          </Link>
           <p className="mt-5 max-w-xs text-sm leading-6 text-zinc-600 dark:text-zinc-400">
             A city of refuge for all nations — founded by Prophet Isaiah
             Macwealth, and a beacon of hope and a lifeline to those in need.
@@ -104,9 +107,9 @@ export default function Footer() {
           <ul className="mt-4 flex flex-col gap-3 text-sm text-zinc-600 dark:text-zinc-400">
             {siteLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} className="transition-colors hover:text-amber-600 dark:hover:text-amber-400">
+                <Link href={link.href} className="transition-colors hover:text-amber-600 dark:hover:text-amber-400">
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -114,11 +117,15 @@ export default function Footer() {
 
         <div>
           <h3 className="text-xs font-semibold tracking-widest text-zinc-500 uppercase dark:text-zinc-400">
-            Our Services
+            Our Lifelines
           </h3>
           <ul className="mt-4 flex flex-col gap-3 text-sm text-zinc-600 dark:text-zinc-400">
-            {services.map((service) => (
-              <li key={service}>{service}</li>
+            {pillarServices.map((service) => (
+              <li key={service.href}>
+                <Link href={service.href} className="transition-colors hover:text-amber-600 dark:hover:text-amber-400">
+                  {service.label}
+                </Link>
+              </li>
             ))}
           </ul>
           <h3 className="mt-8 text-xs font-semibold tracking-widest text-zinc-500 uppercase dark:text-zinc-400">
@@ -131,7 +138,7 @@ export default function Footer() {
 
         <div>
           <h3 className="text-xs font-semibold tracking-widest text-zinc-500 uppercase dark:text-zinc-400">
-            Contact
+            Contact &amp; Visit
           </h3>
           <ul className="mt-4 flex flex-col gap-3 text-sm text-zinc-600 dark:text-zinc-400">
             <li>11C Kudirat Abiola Way, Alausa, Ikeja, Lagos, Nigeria</li>
@@ -145,7 +152,7 @@ export default function Footer() {
                 info@arkoflightforallnations.com
               </a>
             </li>
-            <li className="text-xs leading-5">
+            <li className="text-xs leading-5 text-zinc-500 dark:text-zinc-400">
               Africa +27 73 110 9815 · UK +44 7493 345 240
               <br />
               Canada +1 647 563 8691 · USA +1 682 410 0027
