@@ -59,21 +59,6 @@ export default function Hero() {
             Donate Today
           </a>
         </div>
-
-        <div className="mt-16 flex flex-wrap gap-x-10 gap-y-4 border-t border-stone-300/80 pt-8 text-sm text-stone-700">
-          <div className="flex items-center gap-2.5">
-            <span className="size-2 rounded-full bg-amber-500" />
-            <span className="font-semibold text-stone-900">Sunday Service</span> — 8:15 AM
-          </div>
-          <div className="flex items-center gap-2.5">
-            <span className="size-2 rounded-full bg-amber-500" />
-            <span className="font-semibold text-stone-900">Wednesday Service</span> — 7:00 PM
-          </div>
-          <div className="flex items-center gap-2.5">
-            <span className="size-2 rounded-full bg-amber-500" />
-            <span className="font-semibold text-stone-900">10,000-seat sanctuary</span>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -16,7 +16,7 @@ const pillars = [
     title: "Ark Food Bank",
     href: "/pillars/food-bank",
     description:
-      "Training, food and relief items for 20,000 less privileged families every year — operated by OneSound Charity, an arm of The Isaiah Wealth Initiative, serving communities with free food and clothing.",
+      "Food and relief items for 20,000 less privileged families every year — operated by OneSound Charity, an arm of The Isaiah Wealth Initiative, serving communities with free food and clothing.",
     image: `${BASE}/2025/02/OPEN-PANTRY-DECEMBER-2024-79.webp`,
     alt: "Open pantry distribution at the Ark Food Bank",
   },
@@ -76,7 +76,7 @@ export default function Pillars() {
                   </p>
                 </div>
                 <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold text-amber-600">
-                  <span>Explore Pillar</span>
+                  <span>Learn More</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
