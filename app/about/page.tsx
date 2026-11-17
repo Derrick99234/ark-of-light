@@ -5,10 +5,45 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
 export const metadata: Metadata = {
-  title: "About Us — Ark of Light for All Nations",
+  title: "About Ark of Light for All Nations",
   description:
-    "Learn about the founding vision, miraculous 4-month construction, leadership, and 15 humanitarian NGOs of the Ark of Light for All Nations in Lagos, Nigeria.",
+    "The Global headquarters of the ministry of Prophet Isaiah Macwealth in Lagos, Nigeria — a 10,000-capacity architectural landmark, place of worship, food bank, emergency relief base, and host of global conferences.",
 };
+
+const amenities = [
+  {
+    title: "Bible School",
+    desc: "Rigorous biblical training, theological studies, and ministerial equipping for believers and leaders.",
+  },
+  {
+    title: "Tuition-Free Schools",
+    desc: "Tuition-free primary and secondary schools providing quality education to underserved children.",
+  },
+  {
+    title: "Music Recording Studios",
+    desc: "State-of-the-art audio production facilities producing anointed worship music, anthems, and albums.",
+  },
+  {
+    title: "Conference Rooms",
+    desc: "Fully equipped executive boardrooms and breakout halls for international summits, planning, and seminars.",
+  },
+  {
+    title: "Prayer Mountain",
+    desc: "Dedicated sanctuary spaces set apart for quiet communion, deep intercession, fasting, and answered prayers.",
+  },
+  {
+    title: "Lounges & Lodges",
+    desc: "Comfortable hospitality suites, guest lodges, and pastoral lounges welcoming local and international pilgrims.",
+  },
+  {
+    title: "Multipurpose Event Halls",
+    desc: "Flexible gathering auditoriums designed for ministry programs, youth summits, banquets, and exhibitions.",
+  },
+  {
+    title: "Christian Bookshop",
+    desc: "Resource centre housing over 100 authored titles by Dr. Isaiah Macwealth, study aids, and spiritual media.",
+  },
+];
 
 const ngos = [
   { name: "The Empowerment Network (TEN)", desc: "Poverty alleviation, business grants, and vocational training across Nigeria." },
@@ -62,42 +97,39 @@ export default function AboutPage() {
                 "url(https://arkoflightforallnations.com/wp-content/uploads/2025/09/MAIN-HALL-4.jpg)",
             }}
           />
-          <div
-            aria-hidden
-            className="absolute -top-32 right-1/4 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl"
-          />
           <div className="relative mx-auto max-w-6xl px-6">
             <p className="mb-4 text-xs font-semibold tracking-widest text-amber-700 uppercase">
-              About the Ark
+              About Ark of Light for All Nations
             </p>
             <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
-              A City of Refuge Built on Prophetic Mandate
+              Global Headquarters of the Ministry of Prophet Isaiah Macwealth
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-              The global headquarters of Gospel Pillars International Churches — dedicated as a sanctuary of faith, a multi-storage food bank, and an emergency crisis relief centre for all nations.
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-stone-600">
+              The Ark of Light for all Nations is the Global headquarters of the ministry of Prophet Isaiah Macwealth where he hosts conferences, programmes and major ministry events annually.
             </p>
           </div>
         </section>
 
-        {/* Founding Scripture & History */}
+        {/* Core Overview & Landmark Story */}
         <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
               <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
-                Founding Story
+                A City of Refuge &amp; Hope
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
-                Four Months From Foundation to Commissioning
+                Serving Humanity in Faith, Worship &amp; Charity
               </h2>
               <div className="mt-6 space-y-4 leading-relaxed text-stone-600">
                 <p>
-                  In early 2023, Dr. Isaiah Macwealth received the divine mandate to establish an extraordinary city of refuge for the nations in these last days, anchored on two scriptures:
+                  Launched in November 2023, the facility sits on almost 9,000 square meters land in the Ikeja axis of Lagos, serving as a place of worship and base for his local, national and international charity efforts.
                 </p>
-                <blockquote className="border-l-2 border-amber-500 pl-4 italic text-stone-800">
-                  &ldquo;The cities which you shall give to the Levites shall be the six cities of refuge…&rdquo; — Numbers 35:6a
-                  <br />
-                  &ldquo;For mine house shall be called a house of prayer for all people.&rdquo; — Isaiah 56:7
-                </blockquote>
+                <p>
+                  The multi-billion Naira facility has a combined capacity of 10,000 worshippers in its multi-roomed auditoriums, hosting thousands of worshippers every week while housing a Food and Emergency Bank that serves various communities in Lagos and environs with free food, clothing, and emergency supplies.
+                </p>
+                <p>
+                  This architectural landmark features iconic arches, 100% paved floors, and beautiful garden scenery, creating a serene atmosphere of prayer, fellowship and worship.
+                </p>
                 <p>
                   Spanning approximately 8,900 square metres along Kudirat Abiola Way in Alausa, Ikeja, the multi-billion Naira sanctuary was constructed in an unprecedented four months of round-the-clock determination, faith, and discipline.
                 </p>
@@ -128,7 +160,7 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <div className="font-display text-2xl font-bold text-stone-950">
-                    ~8,900m²
+                    ~9,000m²
                   </div>
                   <div className="mt-1 text-xs text-stone-500">
                     Campus Size
@@ -136,12 +168,83 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <div className="font-display text-2xl font-bold text-stone-950">
-                    4 Months
+                    Nov 2023
                   </div>
                   <div className="mt-1 text-xs text-stone-500">
-                    Record Build
+                    Launched
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Architectural Landmark & Campus Amenities */}
+        <section className="border-y border-stone-200/80 bg-stone-50/60 py-20">
+          <div className="mx-auto max-w-6xl px-6">
+            <div className="mb-14 text-center">
+              <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
+                Campus Amenities
+              </p>
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
+                Built for Prayer, Fellowship &amp; Ministry
+              </h2>
+              <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-stone-600">
+                Featuring iconic arches, 100% paved floors, beautiful garden scenery, and purpose-built facilities for a serene atmosphere of prayer, discipleship, and community impact.
+              </p>
+            </div>
+
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {amenities.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-2xl border border-stone-200/80 bg-white p-6 shadow-xs transition-shadow hover:shadow-md hover:border-amber-300"
+                >
+                  <h3 className="font-display text-lg font-bold text-stone-950">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-xs leading-relaxed text-stone-600">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Global Visitors & G3 Conference */}
+        <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <div className="rounded-3xl border border-stone-200/80 bg-gradient-to-br from-white via-amber-50/30 to-orange-50/20 p-8 shadow-sm md:p-14">
+            <div className="grid items-center gap-8 lg:grid-cols-12">
+              <div className="lg:col-span-8">
+                <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
+                  Global Pilgrimage &amp; Annual Conferences
+                </p>
+                <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
+                  Welcoming Delegations From 30+ Nations &amp; 4 Continents
+                </h2>
+                <p className="mt-5 text-base leading-relaxed text-stone-600">
+                  Since its launch, the Ark of Light for all Nations has received visitors from many parts of the world who have come to witness the grace of God, including at the annual Greater Glory Gathering (G3) Intl. Conference which had guests and delegates from over 30 nations and 4 continents in attendance.
+                </p>
+                <p className="mt-3 text-sm font-medium text-stone-700">
+                  To attend conferences at the Ark of Light for all Nations or to access the annual programme itinerary, please visit the official conference portal:
+                </p>
+              </div>
+              <div className="flex flex-col gap-3 lg:col-span-4 lg:items-end">
+                <a
+                  href="https://www.arkoflightforallnations.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-7 py-3.5 text-center text-sm font-semibold text-white shadow-lg shadow-amber-500/25 transition-opacity hover:opacity-90 sm:w-auto"
+                >
+                  Visit arkoflightforallnations.org &rarr;
+                </a>
+                <Link
+                  href="/contact"
+                  className="w-full rounded-full border border-stone-300 bg-white px-7 py-3.5 text-center text-sm font-semibold text-stone-800 shadow-xs transition-colors hover:bg-stone-50 hover:border-stone-400 sm:w-auto"
+                >
+                  Plan Your Visit
+                </Link>
               </div>
             </div>
           </div>
