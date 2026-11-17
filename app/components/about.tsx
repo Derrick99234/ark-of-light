@@ -1,14 +1,26 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const aboutImage =
   "https://arkoflightforallnations.com/wp-content/uploads/2025/09/MAIN-HALL-4.jpg";
+
+const keyAmenities = [
+  "Bible School",
+  "Tuition Free Schools",
+  "Music Recording Studios",
+  "Conference Rooms",
+  "Prayer Mountain",
+  "Lounges & Lodges",
+  "Multipurpose Event Halls",
+  "Christian Bookshop",
+];
 
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="relative">
-          <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-stone-200/60">
+          <div className="overflow-hidden rounded-3xl border border-stone-200/80 shadow-xl">
             <Image
               src={aboutImage}
               alt="Inside the main worship hall of the Ark of Light"
@@ -20,49 +32,63 @@ export default function About() {
           <div className="absolute -bottom-6 -right-4 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 px-6 py-5 text-white shadow-lg sm:-right-6">
             <div className="font-display text-3xl font-bold">2023</div>
             <div className="text-xs font-medium tracking-wide uppercase opacity-90">
-              Launched Nov 11
+              Launched Nov 2023
             </div>
           </div>
-          <div
-            aria-hidden
-            className="absolute -top-8 -left-8 -z-10 h-48 w-48 rounded-full bg-amber-300/30 blur-3xl"
-          />
         </div>
 
         <div>
-          <span className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
-            About the Ark
-          </span>
-          <h2 className="mt-4 font-display text-4xl leading-tight font-bold tracking-tight text-balance text-stone-950 sm:text-5xl">
-            A beacon of hope and a lifeline to those in need
+          <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
+            About the Ark of Light
+          </p>
+          <h2 className="mt-4 font-display text-3xl leading-tight font-bold tracking-tight text-balance text-stone-950 sm:text-4xl lg:text-5xl">
+            Global Headquarters of the Ministry of Prophet Isaiah Macwealth
           </h2>
-          <p className="mt-6 leading-8 text-stone-600">
-            The Ark of Light for All Nations is the global headquarters of
-            Gospel Pillars International Churches, on almost 9,000 square
-            metres along Kudirat Abiola Way in the Ikeja axis of Lagos.
+
+          <p className="mt-6 leading-8 text-stone-700">
+            The Ark of Light for all Nations is the Global headquarters of the ministry of Prophet Isaiah Macwealth where he hosts conferences, programmes and major ministry events annually.
           </p>
           <p className="mt-4 leading-8 text-stone-600">
-            Built in just four months and launched on November 11, 2023, this
-            multi-billion Naira sanctuary seats 10,000 worshippers across its
-            multi-roomed auditoriums — while housing a food and emergency bank
-            serving communities in Lagos and beyond with free food, clothing
-            and relief supplies. It has welcomed pilgrims from over 30 nations
-            and 4 continents, including delegates to the Greater Glory
-            Gathering (G3) International Conference.
+            Launched in November 2023, the facility sits on almost 9,000 square meters land in the Ikeja axis of Lagos, serving as a place of worship and base for his local, national and international charity efforts.
           </p>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-stone-700">
-            <span className="flex items-center gap-2">
-              <span className="size-2 rounded-full bg-amber-500" />
-              ~9,000 sqm campus
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="size-2 rounded-full bg-amber-500" />
-              10,000-seat capacity
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="size-2 rounded-full bg-amber-500" />
-              Iconic arch architecture
-            </span>
+          <p className="mt-4 leading-8 text-stone-600">
+            The multi-billion Naira facility has a combined capacity of 10,000 worshippers in its multi-roomed auditoriums, hosting thousands of worshippers every week while housing a Food and Emergency Bank that serves various communities in Lagos and environs with free food, clothing, and emergency supplies.
+          </p>
+
+          <div className="mt-6 rounded-2xl border border-amber-200/80 bg-amber-50/50 p-5">
+            <p className="text-xs font-semibold tracking-wider text-amber-900 uppercase">
+              Architectural Landmark Features
+            </p>
+            <p className="mt-1 text-sm leading-relaxed text-stone-700">
+              Featuring <strong className="text-stone-900">iconic arches</strong>, <strong className="text-stone-900">100% paved floors</strong>, and <strong className="text-stone-900">beautiful garden scenery</strong> for a serene atmosphere of prayer, fellowship, and worship.
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2 pt-2">
+              {keyAmenities.map((amenity) => (
+                <span
+                  key={amenity}
+                  className="rounded-lg border border-stone-200 bg-white px-2.5 py-1 text-xs font-medium text-stone-800 shadow-2xs"
+                >
+                  {amenity}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/about"
+              className="rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-6 py-3 text-center text-sm font-semibold text-white shadow-md shadow-amber-500/20 transition-opacity hover:opacity-90"
+            >
+              Read Full Story &amp; Leadership
+            </Link>
+            <a
+              href="https://www.arkoflightforallnations.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-stone-300 bg-white px-6 py-3 text-center text-sm font-semibold text-stone-800 shadow-xs transition-colors hover:bg-stone-50 hover:border-stone-400"
+            >
+              Annual Programme Itinerary &rarr;
+            </a>
           </div>
         </div>
       </div>
