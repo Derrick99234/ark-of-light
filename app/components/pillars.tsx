@@ -34,17 +34,17 @@ export default function Pillars() {
   return (
     <section
       id="pillars"
-      className="border-y border-zinc-200 bg-zinc-50 py-24 dark:border-zinc-800 dark:bg-zinc-900/50"
+      className="border-y border-stone-200/80 bg-stone-50/60 py-24"
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-14 text-center">
-          <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+          <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
             Our Three Pillars
           </p>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-balance text-zinc-950 sm:text-5xl dark:text-zinc-50">
+          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-balance text-stone-950 sm:text-5xl">
             One house, three lifelines
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-pretty text-zinc-600 dark:text-zinc-400">
+          <p className="mx-auto mt-4 max-w-xl text-pretty text-stone-600">
             Working together to build a brighter future for all — worship,
             provision and protection, for every nation.
           </p>
@@ -55,7 +55,7 @@ export default function Pillars() {
             <Link
               key={pillar.title}
               href={pillar.href}
-              className="group flex flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl dark:border-zinc-800 dark:bg-zinc-900"
+              className="group flex flex-col overflow-hidden rounded-3xl border border-stone-200/80 bg-white shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-amber-300 hover:shadow-xl"
             >
               <div className="overflow-hidden">
                 <Image
@@ -68,14 +68,14 @@ export default function Pillars() {
               </div>
               <div className="flex flex-1 flex-col justify-between p-7">
                 <div>
-                  <h3 className="font-display text-2xl font-semibold text-zinc-950 transition-colors group-hover:text-amber-600 dark:text-zinc-50 dark:group-hover:text-amber-400">
+                  <h3 className="font-display text-2xl font-semibold text-stone-950 transition-colors group-hover:text-amber-600">
                     {pillar.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-3 text-sm leading-relaxed text-stone-600">
                     {pillar.description}
                   </p>
                 </div>
-                <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold text-amber-600 dark:text-amber-400">
+                <div className="mt-6 flex items-center gap-1.5 text-xs font-semibold text-amber-600">
                   <span>Explore Pillar</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
                     <path d="M5 12h14M12 5l7 7-7 7" />

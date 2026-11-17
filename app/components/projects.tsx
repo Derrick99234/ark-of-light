@@ -42,14 +42,14 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="border-y border-zinc-200 bg-zinc-50 py-24 dark:border-zinc-800 dark:bg-zinc-900/50"
+      className="border-y border-stone-200/80 bg-stone-50/50 py-24"
     >
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-12 text-center">
-          <span className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+          <span className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
             Latest Works
           </span>
-          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-balance text-zinc-950 sm:text-5xl dark:text-zinc-50">
+          <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-balance text-stone-950 sm:text-5xl">
             Transforming communities across the globe
           </h2>
         </div>
@@ -58,15 +58,15 @@ export default function Projects() {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
+              className="group rounded-2xl border border-stone-200/80 bg-white p-6 shadow-xs transition-all hover:-translate-y-1 hover:border-amber-300 hover:shadow-lg"
             >
-              <div className="mb-5 grid size-11 place-items-center rounded-xl bg-amber-50 text-amber-600 transition-colors group-hover:bg-amber-100 dark:bg-amber-500/10 dark:text-amber-400">
+              <div className="mb-5 grid size-11 place-items-center rounded-xl bg-amber-50 text-amber-700 transition-colors group-hover:bg-amber-100">
                 {project.icon}
               </div>
-              <h3 className="font-semibold text-zinc-950 dark:text-zinc-50">
+              <h3 className="font-semibold text-stone-950">
                 {project.title}
               </h3>
-              <p className="mt-1.5 flex items-center gap-1.5 text-sm text-zinc-500 dark:text-zinc-400">
+              <p className="mt-1.5 flex items-center gap-1.5 text-sm text-stone-500">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
                   <circle cx="12" cy="10" r="3" />

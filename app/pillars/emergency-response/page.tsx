@@ -48,12 +48,12 @@ export default function EmergencyResponsePage() {
   return (
     <>
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 bg-white text-stone-900">
         {/* Page Hero */}
-        <section className="relative overflow-hidden bg-zinc-950 py-24 text-white md:py-32">
+        <section className="relative overflow-hidden border-b border-stone-200/80 bg-gradient-to-b from-stone-50 via-white to-amber-50/30 py-20 md:py-28">
           <div
             aria-hidden
-            className="absolute inset-0 bg-cover bg-center opacity-35"
+            className="absolute inset-0 bg-cover bg-center opacity-10"
             style={{
               backgroundImage:
                 "url(https://arkoflightforallnations.com/wp-content/uploads/2025/02/Emergency-Response.webp)",
@@ -61,16 +61,16 @@ export default function EmergencyResponsePage() {
           />
           <div
             aria-hidden
-            className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-zinc-950/60"
+            className="absolute -top-32 right-1/4 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl"
           />
           <div className="relative mx-auto max-w-6xl px-6">
-            <p className="mb-4 text-xs font-semibold tracking-widest text-amber-400 uppercase">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-amber-700 uppercase">
               Third Pillar
             </p>
-            <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+            <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
               Emergency Response Centre
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-300">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
               Immediate humanitarian assistance, medical support, and emergency relief supplies in times of natural disasters, crises, and displacement.
             </p>
           </div>
@@ -80,13 +80,13 @@ export default function EmergencyResponsePage() {
         <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+              <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
                 Rapid Relief
               </p>
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-50">
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
                 When Crisis Strikes, Every Second Counts
               </h2>
-              <div className="mt-6 space-y-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <div className="mt-6 space-y-4 text-sm leading-relaxed text-stone-600">
                 <p>
                   The Emergency Response Centre at the Ark of Light is built to act as a permanent base for rapid humanitarian action.
                 </p>
@@ -99,7 +99,7 @@ export default function EmergencyResponsePage() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-3xl border border-zinc-200 shadow-xl dark:border-zinc-800">
+            <div className="overflow-hidden rounded-3xl border border-stone-200/80 shadow-xl">
               <Image
                 src="https://arkoflightforallnations.com/wp-content/uploads/2025/02/Emergency-Response.webp"
                 alt="Emergency response team preparing relief parcels"
@@ -113,7 +113,7 @@ export default function EmergencyResponsePage() {
           {/* Capabilities Grid */}
           <div className="mt-20">
             <div className="mb-10 text-center">
-              <h3 className="font-display text-2xl font-bold text-zinc-950 sm:text-3xl dark:text-zinc-50">
+              <h3 className="font-display text-2xl font-bold text-stone-950 sm:text-3xl">
                 Core Emergency Protocols
               </h3>
             </div>
@@ -121,12 +121,12 @@ export default function EmergencyResponsePage() {
               {capabilities.map((c) => (
                 <div
                   key={c.title}
-                  className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+                  className="rounded-3xl border border-stone-200/80 bg-white p-8 shadow-xs transition-shadow hover:shadow-md hover:border-amber-300"
                 >
-                  <h4 className="font-display text-xl font-bold text-zinc-950 dark:text-zinc-50">
+                  <h4 className="font-display text-xl font-bold text-stone-950">
                     {c.title}
                   </h4>
-                  <p className="mt-3 text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-3 text-xs leading-relaxed text-stone-600">
                     {c.desc}
                   </p>
                 </div>
@@ -135,20 +135,20 @@ export default function EmergencyResponsePage() {
           </div>
 
           {/* Past Interventions */}
-          <div className="mt-20 rounded-3xl border border-zinc-200 bg-zinc-50 p-8 sm:p-12 dark:border-zinc-800 dark:bg-zinc-900/40">
-            <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+          <div className="mt-20 rounded-3xl border border-stone-200/80 bg-stone-50/70 p-8 sm:p-12">
+            <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
               Documented Interventions
             </p>
-            <h3 className="mt-2 font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+            <h3 className="mt-2 font-display text-2xl font-bold text-stone-950">
               Proven Community Response
             </h3>
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               {pastOutreaches.map((p) => (
-                <div key={p.title} className="rounded-2xl bg-white p-6 shadow-sm dark:bg-zinc-900">
-                  <h4 className="font-semibold text-zinc-950 dark:text-zinc-50">
+                <div key={p.title} className="rounded-2xl border border-stone-200/80 bg-white p-6 shadow-xs">
+                  <h4 className="font-semibold text-stone-950">
                     {p.title}
                   </h4>
-                  <p className="mt-2 text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2 text-xs leading-relaxed text-stone-600">
                     {p.desc}
                   </p>
                 </div>
@@ -158,12 +158,12 @@ export default function EmergencyResponsePage() {
         </section>
 
         {/* CTA */}
-        <section className="border-t border-zinc-200 bg-zinc-50 py-16 dark:border-zinc-800 dark:bg-zinc-900/40">
+        <section className="border-t border-stone-200/80 bg-stone-50/60 py-16">
           <div className="mx-auto max-w-4xl px-6 text-center">
-            <h3 className="font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+            <h3 className="font-display text-2xl font-bold text-stone-950">
               Help Us Stock Emergency Relief Supplies
             </h3>
-            <p className="mx-auto mt-3 max-w-lg text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <p className="mx-auto mt-3 max-w-lg text-xs leading-relaxed text-stone-600">
               By partnering with the emergency fund, you ensure emergency kits, medical supplies, and relief vehicles are on standby before crisis strikes.
             </p>
             <div className="mt-6 flex justify-center gap-4">
@@ -175,7 +175,7 @@ export default function EmergencyResponsePage() {
               </Link>
               <Link
                 href="/volunteer"
-                className="rounded-full border border-zinc-300 px-7 py-3 text-xs font-semibold text-zinc-800 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
+                className="rounded-full border border-stone-300 bg-white px-7 py-3 text-xs font-semibold text-stone-800 shadow-xs transition-colors hover:bg-stone-50 hover:border-stone-400"
               >
                 Join Emergency Team
               </Link>
@@ -187,4 +187,3 @@ export default function EmergencyResponsePage() {
     </>
   );
 }
-

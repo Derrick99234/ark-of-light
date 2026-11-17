@@ -8,7 +8,7 @@ export default function About() {
     <section id="about" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="relative">
-          <div className="overflow-hidden rounded-3xl shadow-xl">
+          <div className="overflow-hidden rounded-3xl shadow-xl ring-1 ring-stone-200/60">
             <Image
               src={aboutImage}
               alt="Inside the main worship hall of the Ark of Light"
@@ -30,18 +30,18 @@ export default function About() {
         </div>
 
         <div>
-          <span className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+          <span className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
             About the Ark
           </span>
-          <h2 className="mt-4 font-display text-4xl leading-tight font-bold tracking-tight text-balance text-zinc-950 sm:text-5xl dark:text-zinc-50">
+          <h2 className="mt-4 font-display text-4xl leading-tight font-bold tracking-tight text-balance text-stone-950 sm:text-5xl">
             A beacon of hope and a lifeline to those in need
           </h2>
-          <p className="mt-6 leading-8 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-6 leading-8 text-stone-600">
             The Ark of Light for All Nations is the global headquarters of
             Gospel Pillars International Churches, on almost 9,000 square
             metres along Kudirat Abiola Way in the Ikeja axis of Lagos.
           </p>
-          <p className="mt-4 leading-8 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 leading-8 text-stone-600">
             Built in just four months and launched on November 11, 2023, this
             multi-billion Naira sanctuary seats 10,000 worshippers across its
             multi-roomed auditoriums — while housing a food and emergency bank
@@ -50,17 +50,17 @@ export default function About() {
             and 4 continents, including delegates to the Greater Glory
             Gathering (G3) International Conference.
           </p>
-          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-zinc-700 dark:text-zinc-300">
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm font-medium text-stone-700">
             <span className="flex items-center gap-2">
-              <span className="size-1.5 rounded-full bg-amber-500" />
+              <span className="size-2 rounded-full bg-amber-500" />
               ~9,000 sqm campus
             </span>
             <span className="flex items-center gap-2">
-              <span className="size-1.5 rounded-full bg-amber-500" />
+              <span className="size-2 rounded-full bg-amber-500" />
               10,000-seat capacity
             </span>
             <span className="flex items-center gap-2">
-              <span className="size-1.5 rounded-full bg-amber-500" />
+              <span className="size-2 rounded-full bg-amber-500" />
               Iconic arch architecture
             </span>
           </div>

@@ -190,20 +190,20 @@ export default function Facilities() {
       {/* Section Header & Impact Counts */}
       <div className="mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div>
-          <span className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+          <span className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
             Facilities &amp; Architecture
           </span>
-          <h2 className="mt-4 max-w-md font-display text-4xl font-bold tracking-tight text-balance text-zinc-950 sm:text-5xl dark:text-zinc-50">
+          <h2 className="mt-4 max-w-md font-display text-4xl font-bold tracking-tight text-balance text-stone-950 sm:text-5xl">
             More than an auditorium — a sanctuary city
           </h2>
         </div>
-        <ul className="flex gap-8 border-t border-zinc-200/80 pt-4 md:border-t-0 md:pt-0 dark:border-zinc-800">
+        <ul className="flex gap-8 border-t border-stone-200/80 pt-4 md:border-t-0 md:pt-0">
           {counts.map((count) => (
             <li key={count.label}>
-              <div className="font-display text-3xl font-bold text-zinc-950 dark:text-zinc-50">
+              <div className="font-display text-3xl font-bold text-stone-950">
                 {count.value}
               </div>
-              <div className="mt-1 max-w-[9rem] text-xs text-zinc-500 dark:text-zinc-400">
+              <div className="mt-1 max-w-[9rem] text-xs text-stone-500">
                 {count.label}
               </div>
             </li>
@@ -217,7 +217,7 @@ export default function Facilities() {
           <div
             key={cat.id}
             onClick={() => openCategory(cat)}
-            className="group relative cursor-pointer overflow-hidden rounded-3xl border border-zinc-200 bg-zinc-950 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl dark:border-zinc-800"
+            className="group relative cursor-pointer overflow-hidden rounded-3xl border border-stone-200/90 bg-stone-100 shadow-xs transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:border-amber-300"
           >
             <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Image
@@ -227,19 +227,19 @@ export default function Facilities() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/85 via-zinc-950/25 to-transparent transition-opacity group-hover:from-zinc-950/90" />
+              <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/25 to-transparent transition-opacity group-hover:from-stone-950/90" />
 
               {/* Photo count indicator */}
-              <span className="absolute top-4 right-4 text-xs font-semibold tracking-wide text-zinc-200 drop-shadow">
+              <span className="absolute top-4 right-4 text-xs font-semibold tracking-wide text-white drop-shadow">
                 {cat.count} {cat.count === 1 ? "Photo" : "Photos"}
               </span>
 
               {/* Bottom overlay with title and arrow pill */}
               <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-6">
-                <h3 className="font-display text-xl font-bold text-white transition-colors group-hover:text-amber-400">
+                <h3 className="font-display text-xl font-bold text-white transition-colors group-hover:text-amber-300">
                   {cat.title}
                 </h3>
-                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white/15 text-white backdrop-blur-sm transition-all group-hover:bg-amber-500 group-hover:text-white">
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-all group-hover:bg-amber-500 group-hover:text-white">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
@@ -251,9 +251,9 @@ export default function Facilities() {
       </div>
 
       {/* Facilities Footer Info */}
-      <div className="mt-12 rounded-2xl border border-zinc-200/80 bg-zinc-50 p-6 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-400">
+      <div className="mt-12 rounded-2xl border border-stone-200/80 bg-stone-50 p-6 text-sm text-stone-600">
         <p className="leading-relaxed">
-          <strong className="text-zinc-950 dark:text-zinc-100">Campus Facilities:</strong> 10,000-seat main auditorium, Children&rsquo;s church halls, Bible school lecture rooms, prayer conference suites, Christian bookshop, multi-storage food bank, primary school, broadcast studios, VIP guest lodges, mini-mart, and community food court.
+          <strong className="text-stone-950">Campus Facilities:</strong> 10,000-seat main auditorium, Children&rsquo;s church halls, Bible school lecture rooms, prayer conference suites, Christian bookshop, multi-storage food bank, primary school, broadcast studios, VIP guest lodges, mini-mart, and community food court.
         </p>
       </div>
 
@@ -262,33 +262,33 @@ export default function Facilities() {
         <div
           role="dialog"
           aria-modal="true"
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 sm:p-6 backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-stone-950/80 p-4 sm:p-6 backdrop-blur-md"
           onClick={() => setActiveCategory(null)}
         >
           {/* Modal Container */}
           <div
-            className="relative flex max-h-[95vh] w-full max-w-5xl flex-col rounded-3xl border border-white/10 bg-zinc-950 p-5 shadow-2xl sm:p-7"
+            className="relative flex max-h-[95vh] w-full max-w-5xl flex-col rounded-3xl border border-stone-200 bg-white p-5 shadow-2xl sm:p-7"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
-            <div className="mb-4 flex items-center justify-between border-b border-white/10 pb-4">
+            <div className="mb-4 flex items-center justify-between border-b border-stone-200 pb-4">
               <div>
-                <span className="text-xs font-semibold tracking-wider text-amber-400 uppercase">
+                <span className="text-xs font-semibold tracking-wider text-amber-700 uppercase">
                   Category Gallery
                 </span>
-                <h3 className="font-display text-xl font-bold text-white sm:text-2xl">
+                <h3 className="font-display text-xl font-bold text-stone-950 sm:text-2xl">
                   {activeCategory.title}
                 </h3>
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-xs font-medium text-zinc-400">
+                <span className="text-xs font-medium text-stone-500">
                   {activePhotoIndex + 1} of {categoryPhotos.length}
                 </span>
                 <button
                   type="button"
                   aria-label="Close modal"
                   onClick={() => setActiveCategory(null)}
-                  className="grid size-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+                  className="grid size-10 place-items-center rounded-full bg-stone-100 text-stone-700 transition-colors hover:bg-stone-200"
                 >
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18" />
@@ -299,7 +299,7 @@ export default function Facilities() {
             </div>
 
             {/* Main Image Display */}
-            <div className="relative flex flex-1 items-center justify-center overflow-hidden rounded-2xl bg-zinc-900/60 py-2">
+            <div className="relative flex flex-1 items-center justify-center overflow-hidden rounded-2xl bg-stone-100 py-2">
               {/* Previous button */}
               {categoryPhotos.length > 1 && (
                 <button
@@ -310,7 +310,7 @@ export default function Facilities() {
                       prev === 0 ? categoryPhotos.length - 1 : prev - 1
                     )
                   }
-                  className="absolute left-3 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-all hover:bg-black/90 hover:scale-105 sm:left-5"
+                  className="absolute left-3 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center rounded-full bg-white/90 text-stone-800 shadow-md backdrop-blur-sm transition-all hover:bg-white hover:scale-105 sm:left-5"
                 >
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M15 18l-6-6 6-6" />
@@ -324,7 +324,7 @@ export default function Facilities() {
                 <img
                   src={categoryPhotos[activePhotoIndex].src}
                   alt={categoryPhotos[activePhotoIndex].caption}
-                  className="max-h-[58vh] max-w-full rounded-xl object-contain shadow-2xl"
+                  className="max-h-[58vh] max-w-full rounded-xl object-contain shadow-lg"
                 />
               </div>
 
@@ -338,7 +338,7 @@ export default function Facilities() {
                       prev === categoryPhotos.length - 1 ? 0 : prev + 1
                     )
                   }
-                  className="absolute right-3 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center rounded-full bg-black/60 text-white backdrop-blur-sm transition-all hover:bg-black/90 hover:scale-105 sm:right-5"
+                  className="absolute right-3 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center rounded-full bg-white/90 text-stone-800 shadow-md backdrop-blur-sm transition-all hover:bg-white hover:scale-105 sm:right-5"
                 >
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M9 18l6-6-6-6" />
@@ -349,7 +349,7 @@ export default function Facilities() {
 
             {/* Caption */}
             <div className="mt-3 text-center">
-              <p className="font-medium text-white sm:text-base">
+              <p className="font-medium text-stone-900 sm:text-base">
                 {categoryPhotos[activePhotoIndex].caption}
               </p>
             </div>
@@ -364,8 +364,8 @@ export default function Facilities() {
                     onClick={() => setActivePhotoIndex(i)}
                     className={`relative size-14 shrink-0 overflow-hidden rounded-xl border-2 transition-all ${
                       activePhotoIndex === i
-                        ? "border-amber-400 scale-105 shadow-md shadow-amber-500/20"
-                        : "border-transparent opacity-60 hover:opacity-100"
+                        ? "border-amber-500 scale-105 shadow-md shadow-amber-500/20"
+                        : "border-stone-200 opacity-60 hover:opacity-100"
                     }`}
                   >
                     {/* eslint-disable-next-line @next/next/no-img-element */}

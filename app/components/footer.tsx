@@ -66,7 +66,7 @@ const locations = ["Nigeria", "United Kingdom", "United States", "Canada", "Phil
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-950">
+    <footer className="border-t border-stone-200 bg-stone-100/70">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
           <Link href="/">
@@ -78,7 +78,7 @@ export default function Footer() {
               className="h-9 w-auto"
             />
           </Link>
-          <p className="mt-5 max-w-xs text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-5 max-w-xs text-sm leading-6 text-stone-600">
             A city of refuge for all nations — founded by Prophet Isaiah
             Macwealth, and a beacon of hope and a lifeline to those in need.
           </p>
@@ -90,7 +90,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="grid size-9 place-items-center rounded-full border border-zinc-200 text-zinc-500 transition-colors hover:border-amber-400 hover:text-amber-600 dark:border-zinc-800 dark:text-zinc-400 dark:hover:text-amber-400"
+                className="grid size-9 place-items-center rounded-full border border-stone-200/90 bg-white text-stone-500 transition-colors hover:border-amber-400 hover:text-amber-700"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                   {social.icon}
@@ -101,13 +101,13 @@ export default function Footer() {
         </div>
 
         <nav aria-label="Site">
-          <h3 className="text-xs font-semibold tracking-widest text-zinc-500 uppercase dark:text-zinc-400">
+          <h3 className="text-xs font-semibold tracking-widest text-stone-900 uppercase">
             Explore
           </h3>
-          <ul className="mt-4 flex flex-col gap-3 text-sm text-zinc-600 dark:text-zinc-400">
+          <ul className="mt-4 flex flex-col gap-3 text-sm text-stone-600">
             {siteLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="transition-colors hover:text-amber-600 dark:hover:text-amber-400">
+                <Link href={link.href} className="transition-colors hover:text-amber-700">
                   {link.label}
                 </Link>
               </li>
@@ -116,43 +116,43 @@ export default function Footer() {
         </nav>
 
         <div>
-          <h3 className="text-xs font-semibold tracking-widest text-zinc-500 uppercase dark:text-zinc-400">
+          <h3 className="text-xs font-semibold tracking-widest text-stone-900 uppercase">
             Our Lifelines
           </h3>
-          <ul className="mt-4 flex flex-col gap-3 text-sm text-zinc-600 dark:text-zinc-400">
+          <ul className="mt-4 flex flex-col gap-3 text-sm text-stone-600">
             {pillarServices.map((service) => (
               <li key={service.href}>
-                <Link href={service.href} className="transition-colors hover:text-amber-600 dark:hover:text-amber-400">
+                <Link href={service.href} className="transition-colors hover:text-amber-700">
                   {service.label}
                 </Link>
               </li>
             ))}
           </ul>
-          <h3 className="mt-8 text-xs font-semibold tracking-widest text-zinc-500 uppercase dark:text-zinc-400">
+          <h3 className="mt-8 text-xs font-semibold tracking-widest text-stone-900 uppercase">
             Locations
           </h3>
-          <p className="mt-4 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-sm leading-6 text-stone-600">
             {locations.join(" · ")}
           </p>
         </div>
 
         <div>
-          <h3 className="text-xs font-semibold tracking-widest text-zinc-500 uppercase dark:text-zinc-400">
+          <h3 className="text-xs font-semibold tracking-widest text-stone-900 uppercase">
             Contact &amp; Visit
           </h3>
-          <ul className="mt-4 flex flex-col gap-3 text-sm text-zinc-600 dark:text-zinc-400">
+          <ul className="mt-4 flex flex-col gap-3 text-sm text-stone-600">
             <li>11C Kudirat Abiola Way, Alausa, Ikeja, Lagos, Nigeria</li>
             <li>
-              <a href="tel:+2348090111194" className="transition-colors hover:text-amber-600">
+              <a href="tel:+2348090111194" className="transition-colors hover:text-amber-700">
                 +234 809 011 1194
               </a>
             </li>
             <li>
-              <a href="mailto:info@arkoflightforallnations.com" className="transition-colors hover:text-amber-600">
+              <a href="mailto:info@arkoflightforallnations.com" className="transition-colors hover:text-amber-700">
                 info@arkoflightforallnations.com
               </a>
             </li>
-            <li className="text-xs leading-5 text-zinc-500 dark:text-zinc-400">
+            <li className="text-xs leading-5 text-stone-500">
               Africa +27 73 110 9815 · UK +44 7493 345 240
               <br />
               Canada +1 647 563 8691 · USA +1 682 410 0027
@@ -161,10 +161,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-zinc-200 dark:border-zinc-800">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-zinc-500 sm:flex-row dark:text-zinc-500">
+      <div className="border-t border-stone-200">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 px-6 py-6 text-xs text-stone-500 sm:flex-row">
           <span>© 2026 Ark of Light for All Nations. All rights reserved.</span>
-          <span className="font-medium text-zinc-400 dark:text-zinc-500">
+          <span className="font-medium text-stone-400">
             &ldquo;Where God is.&rdquo;
           </span>
         </div>

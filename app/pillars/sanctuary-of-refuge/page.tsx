@@ -33,12 +33,12 @@ export default function SanctuaryOfRefugePage() {
   return (
     <>
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 bg-white text-stone-900">
         {/* Page Hero */}
-        <section className="relative overflow-hidden bg-zinc-950 py-24 text-white md:py-32">
+        <section className="relative overflow-hidden border-b border-stone-200/80 bg-gradient-to-b from-stone-50 via-white to-amber-50/30 py-20 md:py-28">
           <div
             aria-hidden
-            className="absolute inset-0 bg-cover bg-center opacity-35"
+            className="absolute inset-0 bg-cover bg-center opacity-10"
             style={{
               backgroundImage:
                 "url(https://arkoflightforallnations.com/wp-content/uploads/2024/03/Sanctuary-of-Refuge-2-1-1.webp)",
@@ -46,28 +46,28 @@ export default function SanctuaryOfRefugePage() {
           />
           <div
             aria-hidden
-            className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-zinc-950/60"
+            className="absolute -top-32 right-1/4 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl"
           />
           <div className="relative mx-auto max-w-6xl px-6">
-            <p className="mb-4 text-xs font-semibold tracking-widest text-amber-400 uppercase">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-amber-700 uppercase">
               First Pillar
             </p>
-            <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+            <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
               Sanctuary of Refuge
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-300">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
               A vibrant home of worship every week and a secure haven of hope for individuals and families escaping conflict, persecution, and displacement.
             </p>
           </div>
         </section>
 
         {/* Biblical Foundation */}
-        <section className="border-b border-zinc-200 bg-zinc-50 py-10 dark:border-zinc-800 dark:bg-zinc-900/50">
+        <section className="border-b border-stone-200/80 bg-stone-50/70 py-10">
           <div className="mx-auto max-w-4xl px-6 text-center">
-            <blockquote className="font-display text-lg italic text-zinc-800 sm:text-xl dark:text-zinc-200">
+            <blockquote className="font-display text-lg italic text-stone-800 sm:text-xl">
               &ldquo;The cities which you shall give to the Levites shall be the six cities of refuge, which you shall appoint for the manslayer to flee into…&rdquo;
             </blockquote>
-            <p className="mt-2 text-xs font-semibold tracking-wider text-amber-600 uppercase dark:text-amber-400">
+            <p className="mt-2 text-xs font-semibold tracking-wider text-amber-700 uppercase">
               Numbers 35:6a
             </p>
           </div>
@@ -77,26 +77,26 @@ export default function SanctuaryOfRefugePage() {
         <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+              <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
                 Core Purpose
               </p>
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-50">
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
                 A Safe Haven for Every Soul
               </h2>
-              <div className="mt-6 space-y-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <div className="mt-6 space-y-4 text-sm leading-relaxed text-stone-600">
                 <p>
                   At the heart of the Ark of Light for All Nations is the belief that the house of God must be a genuine refuge — spiritually, emotionally, and physically.
                 </p>
                 <p>
                   Doors are open to every person without distinction of tribe, race, or religion. Here, weary souls find peace in God&rsquo;s presence, while families confronting crisis or sudden destitution receive warm shelter, basic sustenance, and spiritual restoration.
                 </p>
-                <p className="font-medium text-zinc-900 dark:text-zinc-200 italic">
+                <p className="font-medium text-stone-900 italic">
                   &ldquo;Offering a safe haven not only protects individuals, but provides the critical first step toward rebuilding their lives with dignity, faith, and purpose.&rdquo;
                 </p>
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-3xl border border-zinc-200 shadow-xl dark:border-zinc-800">
+            <div className="overflow-hidden rounded-3xl border border-stone-200/80 shadow-xl">
               <Image
                 src="https://arkoflightforallnations.com/wp-content/uploads/2025/09/MAIN-HALL-4.jpg"
                 alt="Sanctuary of Refuge interior"
@@ -110,7 +110,7 @@ export default function SanctuaryOfRefugePage() {
           {/* Pillars services grid */}
           <div className="mt-20">
             <div className="mb-10 text-center">
-              <h3 className="font-display text-2xl font-bold text-zinc-950 sm:text-3xl dark:text-zinc-50">
+              <h3 className="font-display text-2xl font-bold text-stone-950 sm:text-3xl">
                 Key Components of the Sanctuary
               </h3>
             </div>
@@ -118,12 +118,12 @@ export default function SanctuaryOfRefugePage() {
               {services.map((s) => (
                 <div
                   key={s.title}
-                  className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+                  className="rounded-3xl border border-stone-200/80 bg-white p-8 shadow-xs transition-shadow hover:shadow-md hover:border-amber-300"
                 >
-                  <h4 className="font-display text-xl font-bold text-zinc-950 dark:text-zinc-50">
+                  <h4 className="font-display text-xl font-bold text-stone-950">
                     {s.title}
                   </h4>
-                  <p className="mt-3 text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-3 text-xs leading-relaxed text-stone-600">
                     {s.desc}
                   </p>
                 </div>
@@ -133,12 +133,12 @@ export default function SanctuaryOfRefugePage() {
         </section>
 
         {/* CTA */}
-        <section className="border-t border-zinc-200 bg-zinc-50 py-16 dark:border-zinc-800 dark:bg-zinc-900/40">
+        <section className="border-t border-stone-200/80 bg-stone-50/60 py-16">
           <div className="mx-auto max-w-4xl px-6 text-center">
-            <h3 className="font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+            <h3 className="font-display text-2xl font-bold text-stone-950">
               Experience the Sanctuary in Person
             </h3>
-            <p className="mx-auto mt-3 max-w-lg text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
+            <p className="mx-auto mt-3 max-w-lg text-xs leading-relaxed text-stone-600">
               Join us for Sunday worship at 8:15 AM or Wednesday service at 7:00 PM at Plot 11C Kudirat Abiola Way, Alausa, Ikeja.
             </p>
             <div className="mt-6 flex justify-center gap-4">
@@ -156,4 +156,3 @@ export default function SanctuaryOfRefugePage() {
     </>
   );
 }
-

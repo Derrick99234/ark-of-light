@@ -51,12 +51,12 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 bg-white text-stone-900">
         {/* Page Hero */}
-        <section className="relative overflow-hidden bg-zinc-950 py-24 text-white md:py-32">
+        <section className="relative overflow-hidden border-b border-stone-200/80 bg-gradient-to-b from-stone-50 via-white to-amber-50/30 py-20 md:py-28">
           <div
             aria-hidden
-            className="absolute inset-0 bg-cover bg-center opacity-30"
+            className="absolute inset-0 bg-cover bg-center opacity-10"
             style={{
               backgroundImage:
                 "url(https://arkoflightforallnations.com/wp-content/uploads/2025/09/MAIN-HALL-4.jpg)",
@@ -64,16 +64,16 @@ export default function AboutPage() {
           />
           <div
             aria-hidden
-            className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/85 to-zinc-950/50"
+            className="absolute -top-32 right-1/4 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl"
           />
           <div className="relative mx-auto max-w-6xl px-6">
-            <p className="mb-4 text-xs font-semibold tracking-widest text-amber-400 uppercase">
+            <p className="mb-4 text-xs font-semibold tracking-widest text-amber-700 uppercase">
               About the Ark
             </p>
-            <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+            <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
               A City of Refuge Built on Prophetic Mandate
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-zinc-300">
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
               The global headquarters of Gospel Pillars International Churches — dedicated as a sanctuary of faith, a multi-storage food bank, and an emergency crisis relief centre for all nations.
             </p>
           </div>
@@ -83,17 +83,17 @@ export default function AboutPage() {
         <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
-              <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+              <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
                 Founding Story
               </p>
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-50">
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
                 Four Months From Foundation to Commissioning
               </h2>
-              <div className="mt-6 space-y-4 leading-relaxed text-zinc-600 dark:text-zinc-400">
+              <div className="mt-6 space-y-4 leading-relaxed text-stone-600">
                 <p>
                   In early 2023, Dr. Isaiah Macwealth received the divine mandate to establish an extraordinary city of refuge for the nations in these last days, anchored on two scriptures:
                 </p>
-                <blockquote className="border-l-2 border-amber-500 pl-4 italic text-zinc-800 dark:text-zinc-200">
+                <blockquote className="border-l-2 border-amber-500 pl-4 italic text-stone-800">
                   &ldquo;The cities which you shall give to the Levites shall be the six cities of refuge…&rdquo; — Numbers 35:6a
                   <br />
                   &ldquo;For mine house shall be called a house of prayer for all people.&rdquo; — Isaiah 56:7
@@ -108,7 +108,7 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="overflow-hidden rounded-3xl border border-zinc-200 shadow-xl dark:border-zinc-800">
+              <div className="overflow-hidden rounded-3xl border border-stone-200/80 shadow-xl">
                 <Image
                   src="https://arkoflightforallnations.com/wp-content/uploads/2025/09/main-hall-1-1.jpg"
                   alt="Main Worship Hall of the Ark of Light"
@@ -117,28 +117,28 @@ export default function AboutPage() {
                   className="aspect-[4/3] w-full object-cover"
                 />
               </div>
-              <div className="mt-6 grid grid-cols-3 gap-4 border-t border-zinc-200 pt-6 dark:border-zinc-800">
+              <div className="mt-6 grid grid-cols-3 gap-4 border-t border-stone-200/80 pt-6">
                 <div>
-                  <div className="font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+                  <div className="font-display text-2xl font-bold text-stone-950">
                     10,000
                   </div>
-                  <div className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                  <div className="mt-1 text-xs text-stone-500">
                     Auditorium Capacity
                   </div>
                 </div>
                 <div>
-                  <div className="font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+                  <div className="font-display text-2xl font-bold text-stone-950">
                     ~8,900m²
                   </div>
-                  <div className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                  <div className="mt-1 text-xs text-stone-500">
                     Campus Size
                   </div>
                 </div>
                 <div>
-                  <div className="font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+                  <div className="font-display text-2xl font-bold text-stone-950">
                     4 Months
                   </div>
-                  <div className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+                  <div className="mt-1 text-xs text-stone-500">
                     Record Build
                   </div>
                 </div>
@@ -148,26 +148,26 @@ export default function AboutPage() {
         </section>
 
         {/* Leadership Section */}
-        <section className="border-y border-zinc-200 bg-zinc-50 py-20 dark:border-zinc-800 dark:bg-zinc-900/40">
+        <section className="border-y border-stone-200/80 bg-stone-50/60 py-20">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mb-14 text-center">
-              <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+              <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
                 Spiritual Leadership
               </p>
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-50">
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
                 Guided by Compassion &amp; Purpose
               </h2>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2">
-              <article className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+              <article className="rounded-3xl border border-stone-200/80 bg-white p-8 shadow-xs">
+                <h3 className="font-display text-2xl font-bold text-stone-950">
                   Dr. Isaiah Macwealth
                 </h3>
-                <p className="mt-1 text-sm font-semibold text-amber-600 dark:text-amber-400">
+                <p className="mt-1 text-sm font-semibold text-amber-700">
                   Founder &amp; Senior Pastor
                 </p>
-                <div className="mt-4 space-y-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                <div className="mt-4 space-y-3 text-sm leading-relaxed text-stone-600">
                   <p>
                     Dr. Isaiah Macwealth is an internationally recognized author of over 100 books, an anointed songwriter, prophet to nations, and philanthropist whose ministry started from humble beginnings as a university graduate.
                   </p>
@@ -177,14 +177,14 @@ export default function AboutPage() {
                 </div>
               </article>
 
-              <article className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-                <h3 className="font-display text-2xl font-bold text-zinc-950 dark:text-zinc-50">
+              <article className="rounded-3xl border border-stone-200/80 bg-white p-8 shadow-xs">
+                <h3 className="font-display text-2xl font-bold text-stone-950">
                   Prophetess Lily Anita Macwealth
                 </h3>
-                <p className="mt-1 text-sm font-semibold text-amber-600 dark:text-amber-400">
+                <p className="mt-1 text-sm font-semibold text-amber-700">
                   Co-Senior Pastor &amp; Charity Director
                 </p>
-                <div className="mt-4 space-y-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                <div className="mt-4 space-y-3 text-sm leading-relaxed text-stone-600">
                   <p>
                     Prophetess Lily Anita Macwealth ministers alongside her husband with deep passion for intercessory prayer, spiritual discipleship, and welfare operations.
                   </p>
@@ -200,13 +200,13 @@ export default function AboutPage() {
         {/* 15 NGOs Section */}
         <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="mb-12 text-center">
-            <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+            <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
               Humanitarian Impact
             </p>
-            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-50">
+            <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
               15 NGOs Under The Isaiah Wealth Initiative
             </h2>
-            <p className="mx-auto mt-3 max-w-xl text-sm text-zinc-600 dark:text-zinc-400">
+            <p className="mx-auto mt-3 max-w-xl text-sm text-stone-600">
               Each specialized non-governmental organization addresses a critical human need — bringing relief, dignity, and sustainable transformation.
             </p>
           </div>
@@ -215,12 +215,12 @@ export default function AboutPage() {
             {ngos.map((ngo) => (
               <div
                 key={ngo.name}
-                className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+                className="rounded-2xl border border-stone-200/80 bg-white p-6 shadow-xs transition-shadow hover:shadow-md hover:border-amber-300"
               >
-                <h3 className="font-semibold text-zinc-950 dark:text-zinc-50">
+                <h3 className="font-semibold text-stone-950">
                   {ngo.name}
                 </h3>
-                <p className="mt-2 text-xs leading-relaxed text-zinc-500 dark:text-zinc-400">
+                <p className="mt-2 text-xs leading-relaxed text-stone-500">
                   {ngo.desc}
                 </p>
               </div>
@@ -229,13 +229,13 @@ export default function AboutPage() {
         </section>
 
         {/* 4 Best Practices */}
-        <section className="border-y border-zinc-200 bg-zinc-50 py-20 dark:border-zinc-800 dark:bg-zinc-900/40">
+        <section className="border-y border-stone-200/80 bg-stone-50/60 py-20">
           <div className="mx-auto max-w-6xl px-6">
             <div className="mb-12 text-center">
-              <p className="text-xs font-semibold tracking-widest text-amber-600 uppercase dark:text-amber-400">
+              <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
                 Core Principles
               </p>
-              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl dark:text-zinc-50">
+              <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
                 Best Practices We Champion
               </h2>
             </div>
@@ -244,15 +244,15 @@ export default function AboutPage() {
               {practices.map((item, idx) => (
                 <div
                   key={item.title}
-                  className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+                  className="rounded-2xl border border-stone-200/80 bg-white p-6 shadow-xs"
                 >
-                  <div className="font-display text-2xl font-bold text-amber-600 dark:text-amber-400">
+                  <div className="font-display text-2xl font-bold text-amber-700">
                     0{idx + 1}
                   </div>
-                  <h3 className="mt-3 font-semibold text-zinc-950 dark:text-zinc-50">
+                  <h3 className="mt-3 font-semibold text-stone-950">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2 text-xs leading-relaxed text-stone-600">
                     {item.desc}
                   </p>
                 </div>
@@ -263,11 +263,11 @@ export default function AboutPage() {
 
         {/* Call to Action */}
         <section className="mx-auto max-w-6xl px-6 py-20">
-          <div className="rounded-3xl bg-zinc-950 px-8 py-16 text-center text-white dark:bg-zinc-900">
-            <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
+          <div className="rounded-3xl border border-amber-200/80 bg-gradient-to-br from-amber-500/10 via-amber-50/70 to-orange-500/10 px-8 py-16 text-center shadow-lg shadow-amber-500/5">
+            <h2 className="font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
               Be a Part of What God Is Doing at the Ark
             </h2>
-            <p className="mx-auto mt-4 max-w-lg text-sm text-zinc-400">
+            <p className="mx-auto mt-4 max-w-lg text-sm text-stone-600">
               Whether worshipping with us in person, volunteering in community outreaches, or partnering financially, there is a place for you.
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -279,7 +279,7 @@ export default function AboutPage() {
               </Link>
               <Link
                 href="/contact"
-                className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+                className="rounded-full border border-stone-300 bg-white px-7 py-3.5 text-sm font-semibold text-stone-800 shadow-xs transition-colors hover:bg-stone-50 hover:border-stone-400"
               >
                 Plan Your Visit
               </Link>
@@ -291,4 +291,3 @@ export default function AboutPage() {
     </>
   );
 }
-
