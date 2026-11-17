@@ -1,23 +1,23 @@
 const heroImage =
-  "https://arkoflightforallnations.com/wp-content/uploads/2025/09/main-hall-2-1.jpg";
+  "https://arkoflightforallnations.com/wp-content/uploads/2025/09/1-scaled.png";
 
 export default function Hero() {
   return (
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-stone-50 text-stone-900">
-      {/* Background Photo of the Ark of Light — clear and uncovered on the right */}
+      {/* Background Building Image — clear, vivid, and uncovered to the right */}
       <div
         aria-hidden
         className="absolute inset-0 bg-cover bg-center lg:bg-[center_right] bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
 
-      {/* Light gradient shield: solid on the left for maximum text contrast, cleanly tapering to 100% transparent on the right */}
+      {/* Light gradient shield: solid on the left to ensure crystal-clear text contrast, feathering to 100% transparent on the right so the Ark building is fully visible */}
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-r from-stone-50 via-stone-50/95 via-40% to-transparent sm:via-stone-50/90 sm:via-45% lg:from-stone-50 lg:via-stone-50/80 lg:via-45% lg:to-transparent"
       />
 
-      {/* Subtle top and bottom blend */}
+      {/* Smooth top and bottom blends */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-stone-50/70 to-transparent"
