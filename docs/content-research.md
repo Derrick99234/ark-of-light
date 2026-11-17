@@ -6,7 +6,7 @@ Compiled Oct 2026 from arkoflightforallnations.com, gospelpillars.org, and press
 
 The Ark of Light for All Nations is the **global headquarters of Gospel Pillars International Churches** (the church arm of Isaiah Wealth Ministries), located at **Plot 11C Kudirat Abiola Way, Alausa, Ikeja, Lagos, Nigeria**.
 
-- **Launched:** November 11, 2023 (dedicated by Bishop David Oyedepo as chief guest; Bishop Wesley Arije of March of Faith USA presiding father; Prophet Isaac Anto of Ghana; worship leader Ron Kenoly, Panam Percy Paul, Chioma Jesus attended)
+- **Launched:** November 11, 2023 (dedicated with Bishop Wesley Arije of March of Faith USA presiding father; Prophet Isaac Anto of Ghana; worship leader Ron Kenoly, Panam Percy Paul, Chioma Jesus attended)
 - **Construction:** Completed in about 4 months from foundation to finishing
 - **Site:** ~8,900 sqm of land in the Ikeja axis of Lagos
 - **Capacity:** 10,000 worshippers across multi-roomed auditoriums
@@ -83,7 +83,7 @@ God's promise to Dr. Isaiah Macwealth of a "city of refuge for all nations in th
 - Started ministry as a graduate; lives in Lagos with his wife and sons
 - March 2026: launched 8 churches in one day, including The Hebron, Gospel Pillars Church Lekki (Lagos HQ)
 
-**Prophetess Lily Anita Macwealth** — co-Senior Pastor, intercessor, leads charitable works.
+**Prophetess Lily Anita** — co-Senior Pastor, intercessor, leads charitable works.
 
 ## Ministry identity (from Gospel Pillars)
 
@@ -148,7 +148,7 @@ Barnabas · Five Loaves · City Inner Missions · Father's Orphanage · Healing 
 
 ### BusinessDay (Nov 10, 2023) — pre-commissioning briefing
 - Commissioning set for November 11, 2023; the edifice to serve as international HQ of Gospel Pillars International Churches and a base for missions and help projects worldwide.
-- Dignitaries expected: Bishop David Oyedepo (Living Faith Church Worldwide) as chief guest; Bishop Wesley Arije (presiding father of the day); Prophet Isaac Anto (Ghana); Ron Kenoly (USA); Panam Percy Paul; Evan Tope Alabi; Chioma Jesus.
+- Dignitaries attended: Bishop Wesley Arije (presiding father of the day); Prophet Isaac Anto (Ghana); Ron Kenoly (USA); Panam Percy Paul; Evan Tope Alabi; Chioma Jesus.
 - Agbi on Macwealth: "Macwealth's heart carries the mandate of Christ, which is a display of the blend of the supernatural and philanthropy as seen written of Jesus in Acts 10:38."
 - Especially in Nigeria "the newly established Empowerment Network (TEN) is fighting to eradicate poverty."
 

@@ -102,7 +102,7 @@ export default function AboutPage() {
                   Spanning approximately 8,900 square metres along Kudirat Abiola Way in Alausa, Ikeja, the multi-billion Naira sanctuary was constructed in an unprecedented four months of round-the-clock determination, faith, and discipline.
                 </p>
                 <p>
-                  On November 11, 2023, dignitaries and worshippers from across the globe gathered for the grand ribbon-cutting and dedication. Bishop David Oyedepo attended as chief guest, with Bishop Wesley Arije presiding, Prophet Isaac Anto of Ghana, and international gospel ministers including Ron Kenoly, Panam Percy Paul, and Chioma Jesus.
+                  On November 11, 2023, dignitaries and worshippers from across the globe gathered for the grand ribbon-cutting and dedication, with Bishop Wesley Arije presiding, alongside Prophet Isaac Anto of Ghana, and international gospel ministers including Ron Kenoly, Panam Percy Paul, and Chioma Jesus.
                 </p>
               </div>
             </div>
@@ -179,14 +179,14 @@ export default function AboutPage() {
 
               <article className="rounded-3xl border border-stone-200/80 bg-white p-8 shadow-xs">
                 <h3 className="font-display text-2xl font-bold text-stone-950">
-                  Prophetess Lily Anita Macwealth
+                  Prophetess Lily Anita
                 </h3>
                 <p className="mt-1 text-sm font-semibold text-amber-700">
                   Co-Senior Pastor &amp; Charity Director
                 </p>
                 <div className="mt-4 space-y-3 text-sm leading-relaxed text-stone-600">
                   <p>
-                    Prophetess Lily Anita Macwealth ministers alongside her husband with deep passion for intercessory prayer, spiritual discipleship, and welfare operations.
+                    Prophetess Lily Anita ministers alongside her husband with deep passion for intercessory prayer, spiritual discipleship, and welfare operations.
                   </p>
                   <p>
                     She directly oversees welfare initiatives, women empowerment seminars, and seasonal distributions at the Ark Food Bank, ensuring that everyone who visits the Ark experiences the unconditional love of Yeshua.
