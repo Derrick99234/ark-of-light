@@ -7,42 +7,18 @@ import Footer from "../components/footer";
 export const metadata: Metadata = {
   title: "About Ark of Light for All Nations",
   description:
-    "The Global headquarters of the ministry of Prophet Isaiah Macwealth in Lagos, Nigeria — a 10,000-capacity architectural landmark, place of worship, food bank, emergency relief base, and host of global conferences.",
+    "Ark of Light for all Nations is the global headquarters of the ministry of Prophet Isaiah Macwealth, launched on the 11th of November 2023 as a base for his global ministry operations, missions, and charity.",
 };
 
 const amenities = [
-  {
-    title: "Bible School",
-    desc: "Rigorous biblical training, theological studies, and ministerial equipping for believers and leaders.",
-  },
-  {
-    title: "Tuition-Free Schools",
-    desc: "Tuition-free primary and secondary schools providing quality education to underserved children.",
-  },
-  {
-    title: "Music Recording Studios",
-    desc: "State-of-the-art audio production facilities producing anointed worship music, anthems, and albums.",
-  },
-  {
-    title: "Conference Rooms",
-    desc: "Fully equipped executive boardrooms and breakout halls for international summits, planning, and seminars.",
-  },
-  {
-    title: "Prayer Mountain",
-    desc: "Dedicated sanctuary spaces set apart for quiet communion, deep intercession, fasting, and answered prayers.",
-  },
-  {
-    title: "Lounges & Lodges",
-    desc: "Comfortable hospitality suites, guest lodges, and pastoral lounges welcoming local and international pilgrims.",
-  },
-  {
-    title: "Multipurpose Event Halls",
-    desc: "Flexible gathering auditoriums designed for ministry programs, youth summits, banquets, and exhibitions.",
-  },
-  {
-    title: "Christian Bookshop",
-    desc: "Resource centre housing over 100 authored titles by Dr. Isaiah Macwealth, study aids, and spiritual media.",
-  },
+  "Bible School",
+  "Tuition Free Primary & Secondary Schools",
+  "Music Recording Studios",
+  "Conference Rooms",
+  "Prayer Mountain",
+  "Lounges & Lodges",
+  "Multipurpose Event Halls",
+  "Christian Bookshop",
 ];
 
 const ngos = [
@@ -102,39 +78,36 @@ export default function AboutPage() {
               About Ark of Light for All Nations
             </p>
             <h1 className="max-w-3xl font-display text-4xl font-bold tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
-              Global Headquarters of the Ministry of Prophet Isaiah Macwealth
+              Global Headquarters of Prophet Isaiah Macwealth
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-stone-600">
-              The Ark of Light for all Nations is the Global headquarters of the ministry of Prophet Isaiah Macwealth where he hosts conferences, programmes and major ministry events annually.
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-stone-700">
+              Ark of Light for all Nations is the global headquarters of the ministry of Prophet Isaiah Macwealth, launched on the 11th of November 2023 as a base for his global ministry operations, missions, and charity.
             </p>
           </div>
         </section>
 
-        {/* Core Overview & Landmark Story */}
+        {/* Official Word-for-Word Narrative */}
         <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
             <div>
               <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
-                A City of Refuge &amp; Hope
+                Sanctuary &amp; Charity Base
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
-                Serving Humanity in Faith, Worship &amp; Charity
+                A City of Refuge Located in Oregun, Ikeja
               </h2>
-              <div className="mt-6 space-y-4 leading-relaxed text-stone-600">
+              <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-700">
                 <p>
-                  Launched in November 2023, the facility sits on almost 9,000 square meters land in the Ikeja axis of Lagos, serving as a place of worship and base for his local, national and international charity efforts.
+                  Ark of Light for all Nations is the global headquarters of the ministry of Prophet Isaiah Macwealth, launched on the 11th of November 2023 as a base for his global ministry operations, missions, and charity.
                 </p>
                 <p>
-                  The multi-billion Naira facility has a combined capacity of 10,000 worshippers in its multi-roomed auditoriums, hosting thousands of worshippers every week while housing a Food and Emergency Bank that serves various communities in Lagos and environs with free food, clothing, and emergency supplies.
+                  The facility which sits on almost 9,000 square meters of prime property located in the high value commercial area of Oregun, Ikeja, serves as a sanctuary of refuge, food bank and emergency response center for local, national and international charity efforts.
                 </p>
                 <p>
-                  This architectural landmark features iconic arches, 100% paved floors, and beautiful garden scenery, creating a serene atmosphere of prayer, fellowship and worship.
+                  The multi-billion Naira facility has a combined capacity of 10,000 worshippers in its multi-roomed auditoriums, hosting thousands of worshippers weekly while housing a Food and Emergency Bank that serves various communities in Lagos and environs with free food, clothing, and emergency supplies.
                 </p>
-                <p>
-                  Spanning approximately 8,900 square metres along Kudirat Abiola Way in Alausa, Ikeja, the multi-billion Naira sanctuary was constructed in an unprecedented four months of round-the-clock determination, faith, and discipline.
-                </p>
-                <p>
-                  On November 11, 2023, dignitaries and worshippers from across the globe gathered for the grand ribbon-cutting and dedication, with Bishop Wesley Arije presiding, alongside Prophet Isaac Anto of Ghana, and international gospel ministers including Ron Kenoly, Panam Percy Paul, and Chioma Jesus.
+                <p className="border-l-2 border-amber-500 pl-4 text-sm italic text-stone-600">
+                  Constructed in an unprecedented four months of faith, dedication, and round-the-clock discipline, the sanctuary was dedicated on November 11, 2023 with Bishop Wesley Arije presiding, Prophet Isaac Anto of Ghana, and international gospel ministers including Ron Kenoly, Panam Percy Paul, and Chioma Jesus.
                 </p>
               </div>
             </div>
@@ -155,7 +128,7 @@ export default function AboutPage() {
                     10,000
                   </div>
                   <div className="mt-1 text-xs text-stone-500">
-                    Auditorium Capacity
+                    Combined Capacity
                   </div>
                 </div>
                 <div>
@@ -163,15 +136,15 @@ export default function AboutPage() {
                     ~9,000m²
                   </div>
                   <div className="mt-1 text-xs text-stone-500">
-                    Campus Size
+                    Prime Oregun Property
                   </div>
                 </div>
                 <div>
                   <div className="font-display text-2xl font-bold text-stone-950">
-                    Nov 2023
+                    Nov 11, 2023
                   </div>
                   <div className="mt-1 text-xs text-stone-500">
-                    Launched
+                    Official Launch
                   </div>
                 </div>
               </div>
@@ -179,55 +152,57 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Architectural Landmark & Campus Amenities */}
+        {/* Architectural Landmark & Amenities */}
         <section className="border-y border-stone-200/80 bg-stone-50/60 py-20">
           <div className="mx-auto max-w-6xl px-6">
-            <div className="mb-14 text-center">
+            <div className="mb-12 text-center">
               <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
-                Campus Amenities
+                Architectural Landmark
               </p>
               <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
-                Built for Prayer, Fellowship &amp; Ministry
+                Iconic Arches, Paved Grounds &amp; Garden Scenery
               </h2>
-              <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-stone-600">
-                Featuring iconic arches, 100% paved floors, beautiful garden scenery, and purpose-built facilities for a serene atmosphere of prayer, discipleship, and community impact.
+              <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-stone-700">
+                This architectural landmark which features iconic arches, 100% paved floors, and beautiful garden scenery also houses:
               </p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {amenities.map((item) => (
                 <div
-                  key={item.title}
-                  className="rounded-2xl border border-stone-200/80 bg-white p-6 shadow-xs transition-shadow hover:shadow-md hover:border-amber-300"
+                  key={item}
+                  className="flex items-center gap-3 rounded-2xl border border-stone-200/90 bg-white p-5 shadow-xs transition-colors hover:border-amber-300"
                 >
-                  <h3 className="font-display text-lg font-bold text-stone-950">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-stone-600">
-                    {item.desc}
-                  </p>
+                  <span className="size-2 rounded-full bg-amber-500 shrink-0" />
+                  <span className="font-display text-base font-semibold text-stone-900">
+                    {item}
+                  </span>
                 </div>
               ))}
             </div>
+
+            <p className="mt-8 text-center text-sm font-medium text-stone-600">
+              and other amenities for a serene atmosphere of prayer, fellowship and worship.
+            </p>
           </div>
         </section>
 
-        {/* Global Visitors & G3 Conference */}
+        {/* G3 International Conference & Delegations */}
         <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-          <div className="rounded-3xl border border-stone-200/80 bg-gradient-to-br from-white via-amber-50/30 to-orange-50/20 p-8 shadow-sm md:p-14">
+          <div className="rounded-3xl border border-amber-200/80 bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40 p-8 shadow-sm md:p-14">
             <div className="grid items-center gap-8 lg:grid-cols-12">
               <div className="lg:col-span-8">
                 <p className="text-xs font-semibold tracking-widest text-amber-700 uppercase">
-                  Global Pilgrimage &amp; Annual Conferences
+                  Global Gatherings &amp; Delegations
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-bold tracking-tight text-stone-950 sm:text-4xl">
-                  Welcoming Delegations From 30+ Nations &amp; 4 Continents
+                  Greater Glory Gathering (G3) Intl. Conference
                 </h2>
-                <p className="mt-5 text-base leading-relaxed text-stone-600">
-                  Since its launch, the Ark of Light for all Nations has received visitors from many parts of the world who have come to witness the grace of God, including at the annual Greater Glory Gathering (G3) Intl. Conference which had guests and delegates from over 30 nations and 4 continents in attendance.
+                <p className="mt-5 text-base leading-relaxed text-stone-700">
+                  Since its launch in November 2023, the Ark of Light for all Nations has received visitors from many parts of the world who have come to witness the grace of God, including at the annual Greater Glory Gathering (G3) Intl. Conference which had guests and delegates from over 30 nations and 4 continents in attendance.
                 </p>
-                <p className="mt-3 text-sm font-medium text-stone-700">
-                  To attend conferences at the Ark of Light for all Nations or to access the annual programme itinerary, please visit the official conference portal:
+                <p className="mt-4 text-sm font-semibold text-stone-900">
+                  To attend conferences at the Ark of Light for all Nations or to access the annual programme itinerary, please visit:
                 </p>
               </div>
               <div className="flex flex-col gap-3 lg:col-span-4 lg:items-end">
@@ -237,7 +212,7 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className="w-full rounded-full bg-gradient-to-r from-amber-500 to-orange-600 px-7 py-3.5 text-center text-sm font-semibold text-white shadow-lg shadow-amber-500/25 transition-opacity hover:opacity-90 sm:w-auto"
                 >
-                  Visit arkoflightforallnations.org &rarr;
+                  www.arkoflightforallnations.org &rarr;
                 </a>
                 <Link
                   href="/contact"
@@ -272,7 +247,7 @@ export default function AboutPage() {
                 </p>
                 <div className="mt-4 space-y-3 text-sm leading-relaxed text-stone-600">
                   <p>
-                    Dr. Isaiah Macwealth is an internationally recognized author of over 100 books, an anointed songwriter, prophet to nations, and philanthropist whose ministry started from humble beginnings as a university graduate.
+                    Dr. Isaiah Macwealth is an author of over 100 books, an anointed songwriter, prophet to nations, and philanthropist whose ministry started from humble beginnings as a university graduate.
                   </p>
                   <p>
                     He serves as the Senior Pastor of Gospel Pillars International Churches, overseeing dozens of branches across 5 continents, including the United Kingdom, United States, Canada, and the Philippines. Through The Isaiah Wealth Initiative (TIWI), he has established 15 non-governmental organizations providing holistic assistance to women, children, and vulnerable families worldwide.

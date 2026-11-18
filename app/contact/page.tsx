@@ -88,7 +88,7 @@ export default function ContactPage() {
                     <br />
                     Plot 11C Kudirat Abiola Way,
                     <br />
-                    Alausa, Ikeja, Lagos, Nigeria
+                    Oregun, Ikeja, Lagos, Nigeria
                   </p>
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=11C+Kudirat+Abiola+Way+Alausa+Ikeja+Lagos+Nigeria"

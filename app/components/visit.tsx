@@ -61,7 +61,7 @@ export default function Visit() {
               <span className="leading-6 text-stone-600">
                 Ark of Light for All Nations
                 <br />
-                11C Kudirat Abiola Way, Alausa, Ikeja
+                11C Kudirat Abiola Way, Oregun, Ikeja
                 <br />
                 Lagos, Nigeria
               </span>

@@ -141,7 +141,7 @@ export default function Footer() {
             Contact &amp; Visit
           </h3>
           <ul className="mt-4 flex flex-col gap-3 text-sm text-stone-600">
-            <li>11C Kudirat Abiola Way, Alausa, Ikeja, Lagos, Nigeria</li>
+            <li>11C Kudirat Abiola Way, Oregun, Ikeja, Lagos, Nigeria</li>
             <li>
               <a href="tel:+2348090111194" className="transition-colors hover:text-amber-700">
                 +234 809 011 1194
